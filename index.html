@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <h1> &#9734 &#9733 &#9734 Student Enrollment Form &#9734 &#9733 &#9734 </h1>
+        <div class="box">
+            <div class="input-form">
+                <h3>&#9758 Enrollment Form &#9756</h3>
+                <form>
+                    <div class="name">
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" placeholder="Enter your name." required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" placeholder="Enter your email." required>
+                    </div>
+                    <div class="website">
+                        <label for="website">Website Link : </label>
+                        <input type="url" id="website" placeholder="Enter your url." required>
+                    </div>
+                    <div class="image">
+                        <label for="image">Image Link : </label>
+                        <input type="url" id="image" placeholder="Enter your image link." value="Deepak_edits.jpg" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender : </label><br>
+                        <input type="radio" name="gender" id="male" value="Male" checked required>Male
+                        <input type="radio" name="gender" id="female" value="Female">Female
+                    </div>
+                    <div class="skills">
+                        <label for="skills">Skills : </label><br>
+                        <input type="checkbox" id="java" value="JAVA" class="check-box">JAVA
+                        <input type="checkbox" id="c" value="C" class="check-box">C
+                        <input type="checkbox" id="cpp" value="C++" class="check-box">C++
+                        <input type="checkbox" id="py" value="Python" class="check-box">Python
+                        <br>
+                        <input type="checkbox" id="html" value="HTML" class="check-box" checked>HTML
+                        <input type="checkbox" id="css" value="CSS" class="check-box">CSS
+                        <input type="checkbox" id="js" value="JavaScript" class="check-box">JavaScript
+                        <br>
+                        <input type="checkbox" id="PHP" value="PHP" class="check-box">PHP
+                        <input type="checkbox" id="SQL" value="SQL" class="check-box">SQL
+                        <input type="checkbox" id="R" value="R" class="check-box">R
+                        <input type="checkbox" id="Kotlin" value="Kotlin" class="check-box">Kotlin
+                    </div>
+
+                    <div class="button">
+                        <button type="button" id="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="output-form">
+                <h3>&#9758 REGISTERED STUDENTS &#9756</h3>
+                <div class="card-Container" id="card-Container"></div>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

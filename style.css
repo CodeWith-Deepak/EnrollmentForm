@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #90fc86;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box{
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    background-image:
+      url("https://cutewallpaper.org/21/plain-black-wallpaper-hd/Black-Plain-Mobile-HD-Wallpaper-WallpaperAsk.jpg");
+    color: white;
+    font-size: 20px;
+}
+
+.input-form{
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 50px;
+}
+
+.input-form input[type="text"],
+.input-form input[type="email"],
+.input-form input[type="url"] {
+    display: block;
+    width: 90%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+.input-form button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px white;
+    background-color: #ffff99;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.input-form button:hover{
+    background-color: white;
+    box-shadow: 5px 5px #ffff99;
+}
+
+.input-form input {
+    margin: 0.7rem;
+}
+
+.output-form {
+    width: 50%;
+    background-image:
+    url("https://cutewallpaper.org/21/plain-black-wallpaper-hd/Black-Plain-Mobile-HD-Wallpaper-WallpaperAsk.jpg");
+    padding: 50px;
+}
+
+.output-form .card-Container{
+    height: 90%;
+    overflow-y: auto;
+}
+
+.output-form .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image:
+    url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54587.jpg?w=360");
+    color: rgb(114, 253, 0);
+    padding: 20px;
+    border: 2px solid rgb(248, 6, 6);
+    box-shadow: 3px 3px rgb(238, 255, 0);
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: bolder;
+    line-break: strict;
+}
+
+.card img {
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    width: 130px;
+    height: 150px;
+}
+
+.card .info {
+    text-align: left;
+}
+
+.card .info p{
+    padding: 3px 3px;
+}
+
+.card .info a {
+    color: #e6e660;
+}
+
+.card .info button {
+    width: 100px;
+    height: 30px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(233, 186, 235);
+    background-color: #f8f86e;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.card .info button:hover{
+    background-color: white;
+    box-shadow: 5px 5px #ffff99;
+}
+
+@media (max-width:1200px) {
+
+    .box {
+        height: 90vh;
+        margin-bottom: 5rem;
+    }
+
+    .card-Container {
+        height: 70%;
+        overflow-y: auto;
+    }
+
+    .output-form .card {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width:900px) {
+    .box {
+        flex-basis: auto;
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    .input-form {
+        width: 100%;
+        height: auto;
+    }
+
+    .output-form {
+        width: 100%;
+        margin: 5rem auto;
+    }
+
+    .output-form .card-Container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 241px));
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+}
